@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/loginpage_bg"
+    android:minWidth="500px"
+    android:minHeight="500px">
+    <ImageView
+        android:contentDescription="@string/app_name"
+        android:src="@drawable/loginpage_logo"
+        android:layout_width="wrap_content"
+        android:layout_height="140.5dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="false"
+        android:id="@+id/loginpageImage"
+        android:layout_marginBottom="0.0dp"
+        android:layout_marginTop="50dp" />
+
+    <TextView
+        android:layout_centerHorizontal="true"
+        android:textAlignment="center"
+        android:layout_below="@id/loginpageImage"
+        android:id="@+id/disclaimer"
+        android:text="*This is a non-commercial project. All suggestions for improvement can be sent to the email: thienlao683@gmail.com Thanks!"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+
+    <Button
+        android:text="@string/loginBtnText"
+        android:layout_width="126.0dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/disclaimer"
+        android:id="@+id/loginButton"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:background="@color/colorButton"
+        android:typeface="monospace"
+        android:layout_marginTop="150dp" />
+
+</RelativeLayout>

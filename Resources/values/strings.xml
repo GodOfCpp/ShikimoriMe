@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">ShikimoriMe</string>
+    <string name="action_settings">Settings</string>
+    <string name="loginText">Enter your login:</string>
+    <string name="passwordText">Enter your password:</string>
+    <string name="registerText">Don\'t have an account yet? Register here!</string>
+    <string name="loginBtnText">Log in</string>
+  
+</resources>

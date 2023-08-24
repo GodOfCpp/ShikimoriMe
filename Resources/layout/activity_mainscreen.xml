@@ -1,0 +1,77 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/background_mainpage">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="60dp">
+        <SearchView
+             android:id="@+id/searchAnimeView"
+             android:queryHint="Поиск аниме"
+             android:layout_width="0dp"
+             android:layout_weight="5"
+             android:layout_height="match_parent"
+             android:layout_marginVertical="10dp"
+             android:layout_marginHorizontal="15dp"
+             android:iconifiedByDefault="false"
+            />
+        <ImageView
+            android:contentDescription="settings_ico"
+            android:clickable="true"
+            android:layout_margin="15dp"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:scaleType="fitEnd" />
+
+        </LinearLayout>
+    <!-- Основное место для показа списка аниме -->
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:scrollbars="vertical"
+        android:layout_width="match_parent"
+        android:layout_marginHorizontal="15dp"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+   <!-- <Space 
+        android:layout_width="match_parent" \
+        android:layout_height="10dp" /> -->
+
+    <RadioGroup
+    android:id="@+id/radioGroup"
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+    android:layout_gravity="bottom"
+    android:orientation="horizontal">
+
+    <RadioButton
+        android:id="@+id/radioButtonHome"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:textAlignment="center"
+        android:text="Главная страница"
+        android:button="@null" 
+        android:background="@drawable/button_selector" 
+        /> 
+
+    <RadioButton
+        android:id="@+id/radioButtonProfile"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:text="Мой профиль"
+        android:textAlignment="center"
+        android:button="@null" 
+        android:background="@drawable/button_selector" 
+        /> 
+
+
+</RadioGroup>
+
+</LinearLayout>
