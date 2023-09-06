@@ -53,6 +53,8 @@ namespace ShikimoriMe
             videoAdapter = new VideoAdapter(video_urls);
             recyclerView.SetAdapter(videoAdapter);
         }
+
+        private void Space() { }
   
     }
 }
