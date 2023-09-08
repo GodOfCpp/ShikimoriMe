@@ -7,4 +7,9 @@
         public int animeId { get; set; }
 
     }
+
+    class Test
+    {
+            
+    }
 }
